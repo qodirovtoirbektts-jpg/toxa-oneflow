@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oneflow (Toxa) — Raqamli Shartnomalar va Avtomatlashtirish Platformasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Banner -->
+  <div class="top-banner">
+    <span>⚡ Yangi avlod e-imzo va shartnoma avtomatizatsiyasi: Bepul 14 kunlik sinov muddati</span>
+    <a href="#demo" class="banner-link">Boshlash <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-symbol">
+          <span>O</span>
+        </div>
+        <span class="logo-text">Oneflow<span class="toxa-badge">Toxa</span></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#features" class="nav-link">Imkoniyatlar</a>
+        <a href="#contract-builder" class="nav-link">Shartnoma Konstruktori</a>
+        <a href="#integrations" class="nav-link">Integratsiyalar</a>
+        <a href="#calculator" class="nav-link">ROI Kalkulyator</a>
+        <a href="#pricing" class="nav-link">Tariflar</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline" id="btnOpenLogin">Kirish</button>
+        <button class="btn btn-primary" id="btnRequestDemo">Demoni Ko'rish</button>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Menyu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Haqiqiy Interaktiv Shartnomalar
+        </div>
+        <h1 class="hero-title">Shartnomalar nafaqat imzolansin, <span class="text-gradient">balki ishlasin.</span></h1>
+        <p class="hero-description">
+          Oneflow — PDF hujjatlar davrini ortda qoldirib, real vaqtda tahrirlanadigan, avtomatik ma'lumot uzatuvchi va e-imzo bilan bir zumda tasdiqlanadigan raqamli shartnomalar platformasi.
+        </p>
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg" id="btnStartFree">
+            Bepul Boshlash <i class="fa-solid fa-bolt"></i>
+          </button>
+          <a href="#contract-builder" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-play"></i> Konstruktorni Sinab Ko'ring
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-avatars">
+            <span class="avatar">👨‍💼</span>
+            <span class="avatar">👩‍💼</span>
+            <span class="avatar">👨‍💻</span>
+            <span class="avatar">👩‍⚖️</span>
+          </div>
+          <p><strong>12,000+</strong> global kompaniyalar va huquqshunoslar ishonchi</p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="contract-card-glass">
+          <div class="card-header-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="card-status live"><i class="fa-solid fa-circle"></i> Jonli Muhokama</span>
+          </div>
+          <div class="card-body-preview">
+            <div class="contract-meta">
+              <h4>B2B Xizmat Ko'rsatish Shartnomasi #OF-9428</h4>
+              <p>Tomonlar: <strong>Toxa Global Corp</strong> & <strong>Nexus Tech Inc</strong></p>
+            </div>
+            <div class="contract-items-table">
+              <div class="table-row head">
+                <span>Xizmat nomi</span>
+                <span>Muddat</span>
+                <span>Summa</span>
+              </div>
+              <div class="table-row">
+                <span>Enterprise API Litsenziyasi</span>
+                <span>12 oy</span>
+                <span class="highlight">$24,000</span>
+              </div>
+              <div class="table-row">
+                <span>Dedicated Cloud Server & SLAs</span>
+                <span>24/7</span>
+                <span class="highlight">$6,500</span>
+              </div>
+            </div>
+            <div class="signature-status-box">
+              <div class="sig-pill signed">
+                <i class="fa-solid fa-check"></i> Toxa Qodirov (Imzolandi)
+              </div>
+              <div class="sig-pill pending pulse">
+                <i class="fa-solid fa-clock"></i> Hamkor imzosini kutmoqda...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Bar -->
+  <section class="metrics-bar">
+    <div class="container metrics-grid">
+      <div class="metric-item">
+        <h3 class="counter" data-target="80">0</h3><span class="unit">%</span>
+        <p>Shartnoma imzolash tezlashishi</p>
+      </div>
+      <div class="metric-item">
+        <h3 class="counter" data-target="100">0</h3><span class="unit">%</span>
+        <p>Qog'ozsiz 100% yuridik kuch</p>
+      </div>
+      <div class="metric-item">
+        <h3 class="counter" data-target="45">0</h3><span class="unit">daq</span>
+        <p>Har bir bitimda tejalgan vaqt</p>
+      </div>
+      <div class="metric-item">
+        <h3 class="counter" data-target="99">0</h3><span class="unit">.9%</span>
+        <p>Tizim ishonchliligi (Uptime SLA)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Contract Simulator -->
+  <section class="section" id="contract-builder">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="badge">Interaktiv Demo</span>
+        <h2>Raqamli Shartnoma Konstruktori</h2>
+        <p>Shartnoma parametrlarini o'zgartiring va bir zumda elektron imzolab ko'ring.</p>
+      </div>
+
+      <div class="builder-box">
+        <div class="builder-controls">
+          <div class="form-group">
+            <label>Mijoz / Kompaniya nomi</label>
+            <input type="text" id="inputClientName" value="Apex Innovations MCHJ" class="input-control">
+          </div>
+          <div class="form-group">
+            <label>Loyiha turi</label>
+            <select id="selectProjectType" class="input-control">
+              <option value="SaaS Cloud Integratsiya" data-price="15000">SaaS Cloud Integratsiya ($15,000)</option>
+              <option value="Enterprise Xavfsizlik Auditi" data-price="8500">Enterprise Xavfsizlik Auditi ($8,500)</option>
+              <option value="Maxsus Dasturiy Ta'minot" data-price="32000" selected>Maxsus Dasturiy Ta'minot ($32,000)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>To'lov grafigi</label>
+            <select id="selectPaymentPlan" class="input-control">
+              <option value="100% Oldindan to'lov (5% chegirma)">100% Oldindan to'lov (5% chegirma)</option>
+              <option value="50% Boshlang'ich / 50% Yakuniy" selected>50% Boshlang'ich / 50% Yakuniy</option>
+              <option value="Oylik to'lov (12 oy)">Oylik to'lov (12 oy)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Elektron Imzo Qoldirish</label>
+            <input type="text" id="inputSignatureName" placeholder="Ism-familiyangizni yozing..." class="input-control">
+          </div>
+          <button class="btn btn-primary btn-block" id="btnSignContract">
+            <i class="fa-solid fa-signature"></i> Shartnomani Imzolash
+          </button>
+        </div>
+
+        <div class="builder-preview" id="liveContractView">
+          <div class="preview-header">
+            <span class="tag-doc">ONEFLOW SMART DOC</span>
+            <span id="docStatusBadge" class="tag-status">Qoralama holati</span>
+          </div>
+          <div class="preview-body">
+            <h3 id="docTitle">Axborot Texnologiyalari Xizmat Shartnomasi</h3>
+            <p>Ushbu bitim <strong>Oneflow Toxa Platform</strong> va <span id="viewClientName" class="val-highlight">Apex Innovations MCHJ</span> o'rtasida tuzildi.</p>
+            <div class="deal-highlight-box">
+              <div class="dh-item">
+                <small>Belgilangan Xizmat:</small>
+                <strong id="viewServiceName">Maxsus Dasturiy Ta'minot</strong>
+              </div>
+              <div class="dh-item">
+                <small>Umumiy Qiymat:</small>
+                <strong id="viewPriceTag" class="price">$32,000 USD</strong>
+              </div>
+              <div class="dh-item">
+                <small>To'lov Sharti:</small>
+                <strong id="viewPaymentSchedule">50% Boshlang'ich / 50% Yakuniy</strong>
+              </div>
+            </div>
+            <div class="preview-signatures">
+              <div class="sig-col">
+                <p>Ijrochi:</p>
+                <div class="digital-sign-stamp done">
+                  <span>Toxa Qodirov</span>
+                  <small>e-ID: OX-88219 • 256-bit SHA</small>
+                </div>
+              </div>
+              <div class="sig-col">
+                <p>Buyurtmachi:</p>
+                <div class="digital-sign-stamp" id="clientSignStamp">
+                  <span id="signTextPlaceholder">Imzo kutilmoqda...</span>
+                  <small id="signMetaPlaceholder">Yuqoridagi formadan imzolang</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Calculator -->
+  <section class="section bg-alt" id="calculator">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="badge">Foyda Hisobi</span>
+        <h2>Kompaniyangiz qancha mablag' va vaqt tejaydi?</h2>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-inputs">
+          <div class="range-group">
+            <div class="range-header">
+              <label>Oylik tuziladigan shartnomalar soni:</label>
+              <span id="lblContractsCount" class="val-badge">120 ta</span>
+            </div>
+            <input type="range" id="rangeContracts" min="10" max="1000" step="10" value="120" class="slider">
+          </div>
+          <div class="range-group">
+            <div class="range-header">
+              <label>Kompaniyadagi savdo / huquq menejerlari soni:</label>
+              <span id="lblManagersCount" class="val-badge">15 kishi</span>
+            </div>
+            <input type="range" id="rangeManagers" min="1" max="100" step="1" value="15" class="slider">
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="result-tile">
+            <small>Yillik tejaladigan soatlar:</small>
+            <h3 id="resSavedHours">1,080 soat</h3>
+          </div>
+          <div class="result-tile highlight">
+            <small>Yillik sof moliyaviy tejamkorlik:</small>
+            <h3 id="resSavedMoney">$38,880</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="badge">Ustunliklar</span>
+        <h2>Statik PDF fayllardan to'liq voz keching</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="f-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3>Jonli Tahrirlash</h3>
+          <p>Mijoz bilan shartnoma ichida jonli muloqot qiling, bandlarni o'zgartiring va yangi fayl yuklamasdan tasdiqlang.</p>
+        </div>
+        <div class="feature-card">
+          <div class="f-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Bank Darajasidagi Xavfsizlik</h3>
+          <p>eIDAS, GDPR sertifikatlari, 256-bitli shifrlash va to'liq audit jurnali har bir harakatni qonuniy himoyalaydi.</p>
+        </div>
+        <div class="feature-card">
+          <div class="f-icon"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+          <h3>CRM & ERP Integratsiyalar</h3>
+          <p>Salesforce, HubSpot, Zapier va Google Workspace bilan avtomatik sinxronizatsiya.</p>
+        </div>
+        <div class="feature-card">
+          <div class="f-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3>Chuqur Analitika</h3>
+          <p>Qaysi bo'lim eng ko'p o'qildi, qayerda ikkilanish bo'ldi — barchasini sekundigacha kuzatib boring.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-symbol"><span>O</span></div>
+          <span class="logo-text">Oneflow <span class="toxa-badge">Toxa</span></span>
+        </div>
+        <p>Biznes jarayonlarini tezlashtiruvchi zamonaviy shartnoma avtomatizatsiyasi.</p>
+        <p class="copy">© 2026 Toxa (qodirovtoirbektts-jpg). Barcha huquqlar himoyalangan.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Mahsulot</h4>
+        <a href="#features">Imkoniyatlar</a>
+        <a href="#contract-builder">Shartnoma Konstruktori</a>
+        <a href="#calculator">ROI Kalkulyatori</a>
+      </div>
+      <div class="footer-col">
+        <h4>Xavfsizlik</h4>
+        <a href="#">eIDAS Standarti</a>
+        <a href="#">GDPR Muvofiqligi</a>
+        <a href="#">Audit Jurnallari</a>
+      </div>
+      <div class="footer-col">
+        <h4>Aloqa</h4>
+        <p><i class="fa-solid fa-envelope"></i> toirbek@oneflow-toxa.uz</p>
+        <p><i class="fa-solid fa-location-dot"></i> Toshkent, IT Park rezidenti</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog -->
+  <div class="modal-overlay" id="demoModal">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseModal">&times;</button>
+      <div class="modal-head">
+        <h3>Oneflow Enterprise Demo</h3>
+        <p>Ekspertimiz sizga 15 daqiqada platformani ko'rsatib beradi.</p>
+      </div>
+      <form id="formDemoRequest">
+        <div class="form-group">
+          <label>Ismingiz</label>
+          <input type="text" required class="input-control" placeholder="Toirbek Qodirov">
+        </div>
+        <div class="form-group">
+          <label>Kompaniya elektron pochtasi</label>
+          <input type="email" required class="input-control" placeholder="name@company.uz">
+        </div>
+        <div class="form-group">
+          <label>Telefon raqam</label>
+          <input type="tel" required class="input-control" placeholder="+998 90 123 45 67">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">So'rov Yuborish</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-notification" id="toast">Xabarnoma</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
